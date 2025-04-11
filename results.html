@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search Query Builder</title>
+    <link rel="stylesheet" href="results.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo.png" type="image/png" sizes="32x32">
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="header-with-logo">
+                <img src="job-cat.png" alt="Logo" class="small-logo">
+                <h1>Search Filters</h1>
+            </div>
+    
+            <!-- Keywords -->
+            <div class="section">
+                <label for="job-keywords">Keywords</label>
+                <input type="text" id="job-keywords" placeholder="e.g. software engineer" />
+                <div id="keywords-tags" class="tags-container"></div>
+            </div>
+    
+            <!-- Exclude -->
+            <div class="section">
+                <label for="exclude-keywords">Exclude Keywords</label>
+                <input type="text" id="exclude-keywords" placeholder="e.g. senior" />
+                <div id="exclude-tags" class="tags-container"></div>
+            </div>
+    
+            
+            
+            <!-- Query Preview -->
+            <div class="section">
+                <label for="query-preview">Query Preview</label>
+                <textarea id="query-preview" rows="4" readonly></textarea>
+            </div>
+            <!-- Job Boards -->
+            <div class="dropdown">
+                <button id="dropdownToggle" class="dropdown-button">Select Job Boards </button>
+                <div id="dropdownMenu" class="dropdown-menu">
+                    <div id="job-board-checkboxes" class="checkbox-container"></div>
+                </div>
+            </div>
+            
+            <button id="build-search">Search</button>
+        </div>
+    
+        <div class="main-content">
+            <h1>Results</h1>
+            <div id="results"></div>
+            <div id="pagination"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
