@@ -1,4 +1,4 @@
-# Job Search Query Builder
+# <img src="logo.png" alt="Alt Text" width="50" height="50"> Job Search Query Builder
 
 A web app that helps you create custom job search queries. Filter results by keywords, exclude terms, and select job boards to get more relevant job listings.
 
