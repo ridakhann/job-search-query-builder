@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Job Search Query Builder">
+    <meta property="og:description" content="Build your job search query with ease!">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="https://ridakhann.github.io/job-search-query-builder/">
+    <meta name="twitter:card" content="summary.png">
+
     <title>Job Search Query Builder</title>
     <link rel="stylesheet" href="results.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -16,23 +22,23 @@
                 <img src="job-cat.png" alt="Logo" class="small-logo">
                 <h1>Search Filters</h1>
             </div>
-    
+
             <!-- Keywords -->
             <div class="section">
                 <label for="job-keywords">Keywords</label>
                 <input type="text" id="job-keywords" placeholder="e.g. software engineer" />
                 <div id="keywords-tags" class="tags-container"></div>
             </div>
-    
+
             <!-- Exclude -->
             <div class="section">
                 <label for="exclude-keywords">Exclude Keywords</label>
                 <input type="text" id="exclude-keywords" placeholder="e.g. senior" />
                 <div id="exclude-tags" class="tags-container"></div>
             </div>
-    
-            
-            
+
+
+
             <!-- Query Preview -->
             <div class="section">
                 <label for="query-preview">Query Preview</label>
@@ -45,10 +51,10 @@
                     <div id="job-board-checkboxes" class="checkbox-container"></div>
                 </div>
             </div>
-            
+
             <button id="build-search">Search</button>
         </div>
-    
+
         <div class="main-content">
             <h1>Results</h1>
             <div id="results"></div>
