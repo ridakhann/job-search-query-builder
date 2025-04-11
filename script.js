@@ -1,6 +1,3 @@
-const apiKey = ''; // Add your Google Custom Search API key here
-const cx = ''; // Add your Google Custom Search Engine ID here
-
 const jobKeywordsInput = document.getElementById('job-keywords');
 const excludeKeywordsInput = document.getElementById('exclude-keywords');
 const queryPreview = document.getElementById('query-preview');
@@ -162,7 +159,7 @@ buildSearchButton.addEventListener('click', async () => {
 async function performSearch(query, page) {
     const startIndex = (page - 1) * 10 + 1;
     const encodedQuery = encodeURIComponent(query);
-    const url = `https://www.googleapis.com/customsearch/v1?key=${apiKey}&cx=${cx}&q=${encodedQuery}&start=${startIndex}&sort=date`;
+    const url = `https://job-search-api-rho.vercel.app/api/search?q=${encodedQuery}&start=${startIndex}`;
 
     try {
         const response = await fetch(url);
