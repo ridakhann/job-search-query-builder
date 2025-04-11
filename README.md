@@ -13,7 +13,7 @@ A web app that helps you create custom job search queries. Filter results by key
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/JobSearchQueryBuilder.git
+   git clone https://github.com/ridakhann/job-search-query-builder.git
 2. - Navigate to the project directory:
     ```bash
     cd job-search-query-builder
