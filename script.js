@@ -192,9 +192,8 @@ function displayResults(results) {
             resultElement.classList.add('result-item');
 
             resultElement.innerHTML = `
-                <div class="result-title">${item.title}</div>
+                <div class="result-title"><a href="${item.link}" target="_blank">${item.title}</a></div>
                 <div class="result-snippet">${item.snippet}</div>
-                <a href="${item.link}" class="result-url" target="_blank">${item.link}</a>
             `;
             resultsContainer.appendChild(resultElement);
         });
